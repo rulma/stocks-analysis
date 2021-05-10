@@ -14,14 +14,14 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 
 #### Run Time Before Refactoring
 
-[2017 before Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2017%20before%20refactor.PNG)
-[2018 before Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2018%20before%20refactor.PNG)
+![2017 before Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2017%20before%20refactor.PNG)
+![2018 before Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2018%20before%20refactor.PNG)
 
 
 
 #### Run Time After Refactoring
-[2017 after Refactor](https://github.com/rulma/stocks-analysis/blob/main/Resources/2017%20refactored.PNG)
-[2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2017%20refactored.PNG)
+![2017 after Refactor](https://github.com/rulma/stocks-analysis/blob/main/Resources/2017%20refactored.PNG)
+![2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2017%20refactored.PNG)
 
 ### Summary
 
