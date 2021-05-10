@@ -17,6 +17,43 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 ![2017 before Refactor](https://github.com/rulma/stocks-analysis/blob/8e1a3c310ac69326d7cb0ae99b00516909559f54/Resources/2017%20before%20refactor.PNG)
 ![2018 before Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2018%20before%20refactor.PNG)
 
+As you can see our initial script is able to complete each request in just under a second. Now this may seem fast but we must consider that we are only working with 12 unique tickers and a couple thousand lines of data. A more realistic data set will have at least 100 times more data to sort and analyze. 
+
+Our biggest time constraint is the nested for loops that fill and calculate our desired metrics.
+
+'''
+ '4) Loop through tickers
+    For i = 0 To 11
+    
+        ticker = tickers(i)
+        totalVolume = 0
+        Worksheets(yearvalue).Activate
+        For j = 2 To RowCount
+            
+            '5a) Get total volume for current ticker
+            If Cells(j, 1).Value = ticker Then
+                totalVolume = totalVolume + Cells(j, 8).Value
+            End If
+            
+            '5b) get starting price for current ticker
+            If Cells(j, 1).Value = ticker And Cells(j - 1, 1).Value <> ticker Then
+                startingPrice = Cells(j, 6).Value
+            End If
+            
+            '5c) get ending price for current ticker
+            If Cells(j, 1).Value = ticker And Cells((j + 1), 1).Value <> ticker Then
+                endingPrice = Cells(j, 6).Value
+            End If
+
+        Next j
+        Worksheets("AllStocksAnalysis").Activate
+        Cells(4 + i, 1).Value = ticker
+        Cells(4 + i, 2).Value = totalVolume
+        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
+        
+    Next i
+  '''
+  
 
 
 #### Run Time After Refactoring
