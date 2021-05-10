@@ -19,10 +19,8 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 
 As you can see our initial script is able to complete each request in just under a second. Now this may seem fast but we must consider that we are only working with 12 unique tickers and a couple thousand lines of data. A more realistic data set will have at least 100 times more data to sort and analyze. 
 
-Our biggest time constraint is the nested for loops that fill and calculate our desired metrics.
-
-'''
- '4) Loop through tickers
+Our biggest time constraint is the nested for loops that fill and calculate our desired metrics
+    
     For i = 0 To 11
     
         ticker = tickers(i)
