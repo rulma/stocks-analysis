@@ -12,19 +12,19 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 
 ### Results
 
-## Summary
+### Summary
 
 Refactoring is something that every programmer will need to do at some point throughout their carreer. There can be both advantages and disadvantages when refactoring a piece or all of a code base. 
 
-## Advantages to Refactoring in General
+### Advantages to Refactoring in General
 
 When solving problems through code, our first solution is rarely if ever perfect. Refactoring provides us with an opportunity to move and develop quickly. We are able to release and push hot fixes to problems we are trying to solve while having the ability to go back and refine them after release. This level of flexibility allows organizations of all sizes to implement change fast and effectively. The faster a company can respond to the challenges it faces then the more productive and adaptive their product/services can be.
 
 A company that is able to quickly change and adjust to the changing forces around them allows them to withstand changes that may have put them out of business otherwise. 
 
 Refactoring is also an excellent way for an organization to train new engineers or developers on their respective code bases. Well documented code allows for new developers to familiarize themselves with the existing code base without requiring them to develop something from scratch.
-## Disadvantages to Refactoring in General
+### Disadvantages to Refactoring in General
 
-## Advantages to Refactoring our Script
+### Advantages to Refactoring our Script
 
-## Disadvantages to Regactoring our Script
+### Disadvantages to Regactoring our Script
