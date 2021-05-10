@@ -52,11 +52,63 @@ Our biggest time constraint is the nested for loops that fill and calculate our 
     Next i
   '''
   
-
+We are calculating Total Volume and Return for each ticker and then writing those variables within each outer loop. Taking the time every iteration of i to write the cell values is cumbersome. Especially since we are switching back and forth between two excel sheets. In our refactor we will look at a more seamless way to get the same result by creating arrays for the Volume, Starting Price, and Ending Price for all of tickers then writing to the after we have filled our arrays.
 
 #### Run Time After Refactoring
 ![2017 after Refactor](https://github.com/rulma/stocks-analysis/blob/main/Resources/2017%20refactored.PNG)
 ![2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/29023f76f6e9b6a482e4fea462a00f66c8e30263/Resources/2018%20refactored.PNG)
+
+After refactoring our script we were able to decrease our runtimes by aproximately 10%! This could prove to be very useful moving forward if we wanted to analyze multiple years at a time or more unique tickers. We were abelt to save time by changing the way we stored and wrote our metrics for each ticker. 
+
+'''
+    
+    '1a) Create a ticker Index
+    tickIndex = 0
+
+    '1b) Create three output arrays
+    Dim tickerVolumes(12) As Long
+    Dim tickerStartingPrices(12) As Single
+    Dim tickerEndingPrices(12) As Single
+    
+    '2a) Create a for loop to initialize the tickerVolumes to zero.
+    For j = 0 To 11
+        tickerVolumes(tickIndex) = 0
+        
+    ''2b) Loop over all the rows in the spreadsheet.
+        For i = 2 To RowCount
+        
+            '3a) Increase volume for current ticker
+            If Cells(i, 1).Value = tickers(tickIndex) Then
+            
+                tickerVolumes(tickIndex) = tickerVolumes(tickIndex) + Cells(i, 8).Value
+            
+            End If
+            
+            '3b) Check if the current row is the first row with the selected tickerIndex.
+            If Cells(i, 1).Value = tickers(tickIndex) And Cells(i - 1, 1).Value <> tickers(tickIndex) Then
+                
+                tickerStartingPrices(tickIndex) = Cells(i, 6).Value
+                
+            End If
+            
+            '3c) check if the current row is the last row with the selected ticker
+             'If the next row’s ticker doesn’t match, increase the tickerIndex.
+            
+            If Cells(i, 1).Value = tickers(tickIndex) And Cells(i + 1, 1).Value <> tickers(tickIndex) Then
+                
+                tickerEndingPrices(tickIndex) = Cells(i, 6).Value
+
+            End If
+                   
+        Next i
+        
+        '3d Increase the tickerIndex.
+        tickIndex = tickIndex + 1
+        
+    Next j
+
+'''
+
 
 ### Summary
 
