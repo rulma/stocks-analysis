@@ -14,7 +14,7 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 
 #### Run Time before Refactoring
 
-
+Resources/2017 before refactor.PNG
 ### Summary
 
 Refactoring is something that every programmer will need to do at some point throughout their carreer. There can be both advantages and disadvantages when refactoring a piece or all of a code base. 
