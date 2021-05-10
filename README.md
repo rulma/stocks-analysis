@@ -34,8 +34,17 @@ When solving problems through code, our first solution is rarely if ever perfect
 A company that is able to quickly change and adjust to the changing forces around them allows them to withstand changes that may have put them out of business otherwise. 
 
 Refactoring is also an excellent way for an organization to train new engineers or developers on their respective code bases. Well documented code allows for new developers to familiarize themselves with the existing code base without requiring them to develop something from scratch.
+
 #### Disadvantages to Refactoring in General
+
+Refactoring can often cause unforseen problems. As organizations and their respective code bases grow it is important to maintain pristine documentation. Without proper documentation, changes made can have harmful consequences. For example if someone where to adjust the steps needed for a user to login without considering the dependecies in each step then they could in theory break the login process in production. When a companies service or product is down due to develop error they can lose thousands of dollars for every hour that it is down. 
+
+The old saying "If it ain't broke, don't fix it"  can be a hard truth to accept. If we are just trying to make cosmetic changes that don't have a real effect on perfomance we may end up breaking something that once worked without issues. This can lead to hours of headaches and bug fixes. 
 
 #### Advantages to Refactoring our Script
 
+When we refacotered our VBA script, we were able to increase performance by nearly 10%. Now for a program that already took less than a second to run this may seem inconsequental but for a process that could time minutes if not hours this could potentially save days worth of computing power. This time saved translate to direct dollar savings for an organization. It will also allow for quicker analysis leading to more up to date decision making which may increase the likelihood of them making a more educated decision.
+
 #### Disadvantages to Regactoring our Script
+
+While we were able to refactor our script to run faster it, it did take a siginifigant amount of time to decrease our run time by 10%. If this program was never going to scale beyond the data set we were testing on then there may be little reason to spend the time refactoring it in the first place. Our refactor also still fails to account for a more dynamic data set. We had a hard coded number of stock tickers to work with in our data. If we were to look at a more robust market analysis we would need to be able to handle any given number of stock tickers. 
