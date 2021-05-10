@@ -13,7 +13,7 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 ### Results
 
 #### Run Time before Refactoring
-[2017 before refactor](Resources/2017 before refactor.PNG)
+
 
 ### Summary
 
