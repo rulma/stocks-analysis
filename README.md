@@ -59,9 +59,7 @@ We are calculating Total Volume and Return for each ticker and then writing thos
 ![2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/29023f76f6e9b6a482e4fea462a00f66c8e30263/Resources/2018%20refactored.PNG)
 
 After refactoring our script we were able to decrease our runtimes by aproximately 10%! This could prove to be very useful moving forward if we wanted to analyze multiple years at a time or more unique tickers. We were abelt to save time by changing the way we stored and wrote our metrics for each ticker. 
-
-'''
-    
+   
     '1a) Create a ticker Index
     tickIndex = 0
 
