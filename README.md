@@ -21,7 +21,7 @@ Refactoring code is an extremely important skill. Often times the first iteratio
 
 #### Run Time After Refactoring
 ![2017 after Refactor](https://github.com/rulma/stocks-analysis/blob/main/Resources/2017%20refactored.PNG)
-![2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/67148fee658fbf33757abe96c35e584def7baeff/Resources/2017%20refactored.PNG)
+![2018 after Refactor](https://github.com/rulma/stocks-analysis/blob/29023f76f6e9b6a482e4fea462a00f66c8e30263/Resources/2018%20refactored.PNG)
 
 ### Summary
 
